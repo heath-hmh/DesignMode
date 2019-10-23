@@ -17,5 +17,16 @@ package designmode.factory;
  * 2.实现工厂接口，实现具体方法
  * </p>
  */
-public class AbstractFactoryTest {
+public class FactoryTest {
+    public static void main(String[] args) {
+        ConcreteFactory concreteFactory = new ConcreteFactory();
+        concreteFactory.abstractFactoryMethod();
+        AbstractFactory objectMethod = concreteFactory.createObjectMethod();
+        objectMethod.abstractFactoryMethod();
+
+        ConcreteFactory2 concreteFactory2 = new ConcreteFactory2();
+        concreteFactory2.abstractFactoryMethod();
+        AbstractFactory objectMethod1 = concreteFactory2.createObjectMethod();
+        objectMethod1.abstractFactoryMethod();
+    }
 }

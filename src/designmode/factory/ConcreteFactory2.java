@@ -7,8 +7,8 @@ import designmode.utils.PrintlnUtils;
  * @date 2019/10/22
  * 具体工厂（ConcreteFactory）
  */
-public class ConcreteFactory implements AbstractFactory {
-    public static final String TAG = ConcreteFactory.class.getSimpleName();
+public class ConcreteFactory2 implements AbstractFactory {
+    public static final String TAG = ConcreteFactory2.class.getSimpleName();
 
     @Override
     public void abstractFactoryMethod() {
@@ -18,6 +18,6 @@ public class ConcreteFactory implements AbstractFactory {
     @Override
     public AbstractFactory createObjectMethod() {
         PrintlnUtils.println(TAG + "调用了createObjectMethod方法");
-        return new ConcreteFactory();
+        return new ConcreteFactory2();
     }
 }
